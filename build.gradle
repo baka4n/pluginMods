@@ -28,7 +28,6 @@ allprojects {
     apply plugin: "architectury-plugin"
     apply plugin: "maven-publish"
 
-
     version = rootProject.mod_version
     group = rootProject.maven_group
 

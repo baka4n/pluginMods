@@ -16,57 +16,61 @@ gradle-app.setting
 .idea
 
 
-gateway/common/build/libs/
-gateway/fabric/build/libs/
-gateway/forge/build/libs/
+gateway/common/build/
+gateway/build/
+gateway/fabric/build/
+gateway/forge/build/
 gateway/fabric/run/
 gateway/forge/run/
 
 moreworld/fabric/run/
 moreworld/forge/run/
-moreworld/common/build/libs/
-moreworld/fabric/build/libs/
-moreworld/forge/build/libs/
+moreworld/build/
+moreworld/common/build/
+moreworld/fabric/build/
+moreworld/forge/build/
 
 normandyloginer/fabric/run/
 normandyloginer/forge/run/
-normandyloginer/common/build/libs/
-normandyloginer/fabric/build/libs/
-normandyloginer/forge/build/libs/
+normandyloginer/common/build/
+normandyloginer/fabric/build/
+normandyloginer/forge/build/
 
 recorder/fabric/run/
 recorder/forge/run/
-recorder/common/build/libs/
-recorder/fabric/build/libs/
-recorder/forge/build/libs/
+recorder/common/build/
+recorder/fabric/build/
+recorder/forge/build/
 
 colony/fabric/run/
 colony/forge/run/
-colony/common/build/libs/
-colony/fabric/build/libs/
-colony/forge/build/libs/
+colony/common/build/
+colony/fabric/build/
+colony/forge/build/
 
 sqlite/fabric/run/
 sqlite/forge/run/
-sqlite/common/build/libs/
-sqlite/fabric/build/libs/
-sqlite/forge/build/libs/
+sqlite/common/build/
+sqlite/fabric/build/
+sqlite/forge/build/
 
 banall/fabric/run/
 banall/forge/run/
-banall/common/build/libs/
-banall/fabric/build/libs/
-banall/forge/build/libs/
+banall/common/build/
+banall/fabric/build/
+banall/forge/build/
 
 group/fabric/run/
 group/forge/run/
-group/common/build/libs/
-group/fabric/build/libs/
-group/forge/build/libs/
+group/common/build/
+group/fabric/build/
+group/forge/build/
 
 economy/fabric/run/
 economy/forge/run/
-economy/common/build/libs/
-economy/fabric/build/libs/
-economy/forge/build/libs/
+economy/common/build/
+economy/fabric/build/
+economy/forge/build/
+
+run/
 
