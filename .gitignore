@@ -16,5 +16,13 @@ gradle-app.setting
 .idea
 
 
+gateway/common/build/libs/
+gateway/fabric/build/libs/
+gateway/forge/build/libs/
 gateway/fabric/run/
 gateway/forge/run/
+
+moreworld/fabric/run/
+moreworld/forge/run/
+
+
