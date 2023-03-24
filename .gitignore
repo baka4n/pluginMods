@@ -24,5 +24,7 @@ gateway/forge/run/
 
 moreworld/fabric/run/
 moreworld/forge/run/
-
+moreworld/common/build/libs/
+moreworld/fabric/build/libs/
+moreworld/forge/build/libs/
 
