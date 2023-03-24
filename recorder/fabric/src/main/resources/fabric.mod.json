@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "recorder",
+  "version": "${version}",
+  "name": "recorder",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "recorder.mixins.json",
+    "recorder-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.18",
+    "minecraft": ">=1.19.2"
+  }
+}

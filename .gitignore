@@ -33,3 +33,9 @@ normandyloginer/forge/run/
 normandyloginer/common/build/libs/
 normandyloginer/fabric/build/libs/
 normandyloginer/forge/build/libs/
+
+recorder/fabric/run/
+recorder/forge/run/
+recorder/common/build/libs/
+recorder/fabric/build/libs/
+recorder/forge/build/libs/
