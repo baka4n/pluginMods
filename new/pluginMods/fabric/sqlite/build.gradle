@@ -30,4 +30,5 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:$fabricVersion"
     implementation project(":common:sqlite")
+    minecraftLibraries(group: 'org.xerial', name: 'sqlite-jdbc', version: '3.41.0.0')
 }
