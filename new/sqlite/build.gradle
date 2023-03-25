@@ -1,0 +1,6 @@
+group groupId
+version modVersion
+
+allprojects {
+    apply plugin: "java"
+}
