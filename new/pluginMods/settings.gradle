@@ -29,7 +29,8 @@ pluginManagement {
 
 }
 
-rootProject.name = 'sqlite'
-include 'common'
-include 'forge'
-include 'fabric'
+rootProject.name = 'pluginsMods'
+include 'common:sqlite'
+include 'fabric:sqlite'
+include 'forge:sqlite'
+findProject(':common:sqlite')?.name = findProject(':fabric:sqlite')?.name = findProject(':forge:sqlite')?.name = 'sqlite'

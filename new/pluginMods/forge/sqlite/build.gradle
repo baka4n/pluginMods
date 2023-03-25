@@ -49,7 +49,7 @@ minecraft {
             mods {
                 sqlite {
                     source sourceSets.main
-                    source project(":common").sourceSets.main
+                    source project(":common:sqlite").sourceSets.main
                 }
             }
         }
@@ -66,7 +66,7 @@ minecraft {
             mods {
                 sqlite {
                     source sourceSets.main
-                    source project(":common").sourceSets.main
+                    source project(":common:sqlite").sourceSets.main
                 }
             }
         }
@@ -83,7 +83,7 @@ minecraft {
             mods {
                 sqlite {
                     source sourceSets.main
-                    source project(":common").sourceSets.main
+                    source project(":common:sqlite").sourceSets.main
                 }
             }
         }
@@ -101,7 +101,7 @@ minecraft {
             mods {
                 sqlite {
                     source sourceSets.main
-                    source project(":common").sourceSets.main
+                    source project(":common:sqlite").sourceSets.main
                 }
             }
         }
@@ -118,7 +118,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {}
 dependencies {
     minecraft 'net.minecraftforge:forge:' + forgeVersion
-    compileOnly(project(":common"))
+    compileOnly(project(":common:sqlite"))
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
