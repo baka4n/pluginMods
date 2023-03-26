@@ -12,12 +12,11 @@ configurations {
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
     developmentForge.extendsFrom common
-
 }
 
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
-    common('org.xerial:sqlite-jdbc:3.41.0.0') {transitive false}
+
     common(project(path: ":sqlite:common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":sqlite:common", configuration: "transformProductionForge")) { transitive = false }
 }
@@ -34,7 +33,6 @@ shadowJar {
     exclude "fabric.mod.json"
 
     configurations = [project.configurations.shadowCommon]
-
     classifier "dev-shadow"
 }
 

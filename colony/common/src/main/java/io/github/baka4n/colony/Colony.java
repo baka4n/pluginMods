@@ -4,7 +4,6 @@ public class Colony {
     public static final String MOD_ID = "colony";
 
     public static void init() {
-        
 
     }
 }
