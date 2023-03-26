@@ -1,0 +1,34 @@
+plugins {
+    id 'fabric-loom' version '1.0-SNAPSHOT'
+    id 'maven-publish'
+}
+
+group groupId
+version "$sqliteName-$iVersion-$modVersion"
+
+repositories {
+    maven {
+        url = 'https://maven.parchmentmc.org'
+        name = "Parchment MC"
+    }
+}
+
+loom {
+    accessWidenerPath = project(":common:sqlite").file("src/main/resources/${sqliteName}.accesswidener")
+}
+
+dependencies {
+    // To change the versions see the gradle.properties file
+    minecraft "com.mojang:minecraft:$minecraftVersion"
+    mappings(loom.layered() {
+        officialMojangMappings()
+        parchment("org.parchmentmc.data:parchment-$minecraftVersion:$parchmentVersion@zip")
+    })
+//    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:$loaderVersion"
+
+    // Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:$fabricVersion"
+    implementation project(":common:sqlite")
+    minecraftLibraries(group: 'org.xerial', name: 'sqlite-jdbc', version: '3.41.0.0')
+}
